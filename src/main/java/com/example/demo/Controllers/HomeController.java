@@ -31,7 +31,7 @@ public class HomeController {
     @PostMapping("/spare")
     public String familie(@RequestParam short familiemedlemmer, Model model){
         int familiebeløb = familiemedlemmer * 1800;
-        model.addAttribute("familiebel", "En gennemsnitlig familie på " + familiemedlemmer + " spilder mad for: " + familiebeløb + " kr. årligt");
+        model.addAttribute("familiebel", "En gennemsnitlig familie på " + familiemedlemmer + " spilder mad for: " + familiebeløb + " kr. årligt.");
         return "home/spare/spare";
     }
     @PostMapping("/spare1")
