@@ -37,6 +37,7 @@ public class HomeController {
     @PostMapping("/spare1")
     public String alder(@RequestParam short alder, @RequestParam int dage, Model model1){
         int alderbeløb = 0;
+        boolean videre = true;
         if(alder >= 16 && alder < 25){
             alderbeløb = 29;
         } else if(alder >= 25 && alder < 35){
@@ -50,10 +51,14 @@ public class HomeController {
         } else if(alder > 65){
             alderbeløb = 27;
         } else{
-            System.out.println("Information for this age is not available.");
+            videre = false;
         }
-        alderbeløb = alderbeløb * dage;
-        model1.addAttribute("alderbel", "En person på " + alder + " år spilder i løbet af " + dage + " i gennemsnit mad for " + alderbeløb + " kr.");
+        if(videre) {
+            alderbeløb = alderbeløb * dage;
+            model1.addAttribute("alderbel", "En person på " + alder + " år spilder i løbet af " + dage + " dage i gennemsnit mad for " + alderbeløb + " kr.");
+        } else if(!videre){
+            model1.addAttribute("alderbel", "Informationer for denne aldersgruppe er ikke tilgængelig.");
+        }
         return "home/spare/spare-alder";
     }
 }
