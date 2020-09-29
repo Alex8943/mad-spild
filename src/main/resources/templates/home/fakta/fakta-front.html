@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Fakta om Madspild</title>
@@ -7,12 +7,9 @@
 </head>
 <body>
     <h1>Danmark Mod Madspild</h1>
-    <div class="topnav">
-        <a class="active" href="/">Forside</a>
-        <a href="/fakta">Fakta om Madspild</a>
-        <a href="/spare">Så meget kan du spare...</a>
-        <a href="/omos">Om os</a>
-    </div>
+
+    <th:block th:include="home/includes/topnav :: topnav"></th:block>
+
     <h2>Fakta om Madspild</h2>
     <p class="card p-2 m-1 fg-2">
         <br>Madaffald er alt affald, der stammer fra mad. Madaffald kan opdeles i to: madspild og øvrigt madaffald. Madspild er fødevarer, der kunne være spist,
