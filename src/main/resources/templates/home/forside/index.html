@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Frontpage</title>
@@ -7,20 +7,8 @@
 </head>
 <body>
 <div class="overskrift"><h1>Danmark Mod Madspild</h1></div>
-    <div class="topnav">
-        <a class="active" href="/">Forside</a>
-        <a href="/fakta">Fakta om Madspild</a>
-        <a href="/spare">Så meget kan du spare...</a>
-        <a href="/omos">Om os</a>
-        <div class="dropdown">
-            <button class="dropbtn">Virksomheder
-                <i class="topnav"></i></button>
-            <div class="dropdown-content">
-                <a href="#">Supermarkedet</a>
-                <a href="#">Restaurations-branchen</a>
-            </div>
-        </div>
-    </div>
+
+    <th:block th:include="home/includes/topnav :: topnav"></th:block>
 
     <h2> Viste du at? </h2>
     <p class="card p-2 m-1 fg-2">

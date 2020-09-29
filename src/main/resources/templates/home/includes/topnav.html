@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container"></div>
+    <div th:fragment="topnav">
+        <div class="topnav">
+            <a class="active" href="/">Forside</a>
+            <a href="/fakta">Fakta om Madspild</a>
+            <a href="/spare">Så meget kan du spare...</a>
+            <a href="/omos">Om os</a>
+            <div class="dropdown">
+                <button class="dropbtn">Info for virksomheder
+                <i class="active"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#Suparmarkedet">Supermarkedet</a>
+                    <a href="#Restuaranter">Restaurations-branchen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
