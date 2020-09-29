@@ -28,12 +28,14 @@ public class HomeController {
     public String spareFront(){
         return "home/spare/spare-front";
     }
+
     @PostMapping("/spare")
     public String familie(@RequestParam short familiemedlemmer, Model model){
         int familiebeløb = familiemedlemmer * 1800;
         model.addAttribute("familiebel", "En gennemsnitlig familie på " + familiemedlemmer + " spilder mad for: " + familiebeløb + " kr. årligt.");
         return "home/spare/spare";
     }
+
     @PostMapping("/spare1")
     public String alder(@RequestParam short alder, @RequestParam int dage, Model model1){
         int alderbeløb = 0;
