@@ -73,8 +73,13 @@ body{
     color: white;
 }
 
-.section-lightgrey h1{
+.section-lightgrey h1 {
     margin: 0;
+}
+
+
+table{
+    text-align: center;
 }
 
 .dropdown {
