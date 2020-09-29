@@ -8,10 +8,10 @@ h1{
     text-align: center;
 }
 
-
-
-
-body {
+p2 {
+    background-color: #4CAF50;
+}
+body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: beige;
