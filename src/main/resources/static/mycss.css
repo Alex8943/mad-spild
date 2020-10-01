@@ -19,7 +19,6 @@ body{
     padding: 10px 0px 10px;
 }
 
-
 .div {
     position: absolute;
     right: 0;
@@ -131,9 +130,6 @@ table{
     display: block;
 }
 
-a:hover {
-    color: dimgrey;
-}
 
 a {
     color: #f2f2f2;
