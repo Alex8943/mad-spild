@@ -14,6 +14,16 @@ body{
     text-align: center;
 }
 
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body{
+    height: 100%;
+}
+
+
 .overskrift{
     background-image: url('pictures/Food2.jpg') !important;
     padding: 10px 0px 10px;
@@ -134,4 +144,21 @@ table{
 a {
     color: #f2f2f2;
     text-decoration: none;
+}
+
+#container{
+    min-height: 100% ;
+}
+
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+#footer{
+    background-color: black;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
 }
