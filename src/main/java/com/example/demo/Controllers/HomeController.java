@@ -31,14 +31,9 @@ public class HomeController {
         return "home/spare/spare-front";
     }
 
-    @GetMapping("/restaurations")
-    public String restaurationsFront(){
-        return "home/virksomhed/restaurations-front";
-    }
-
     @GetMapping("/supermarked")
-    public String supermarkedFront(){
-        return "home/virksomhed/supermarked-front";
+    public String supermarked(){
+        return "home/supermarked/supermarked";
     }
 
     @PostMapping("/spare")
