@@ -31,6 +31,11 @@ public class HomeController {
         return "home/spare/spare-front";
     }
 
+    @GetMapping("/supermarked")
+    public String supermarked(){
+        return "home/supermarked/supermarked";
+    }
+
     @PostMapping("/spare")
     public String familie(@RequestParam short familiemedlemmer, Model model){
         int familiebeløb = familiemedlemmer * 1800;

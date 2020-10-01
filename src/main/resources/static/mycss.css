@@ -128,3 +128,12 @@ table{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+a:hover {
+    color: dimgrey;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
