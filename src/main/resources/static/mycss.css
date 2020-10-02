@@ -102,6 +102,8 @@ table{
 .dropdown {
     float: left;
     overflow: hidden;
+    text-align: center;
+    padding-top: 12px;
 }
 
 .logo{
