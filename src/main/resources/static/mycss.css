@@ -8,10 +8,22 @@ p2 {
     background-color: #4CAF50;
 }
 
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: beige;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+p{
     text-align: center;
 }
 
@@ -29,7 +41,7 @@ html, body{
 .overskrift{
     background-image: url('pictures/Food2.jpg') !important;
     padding: 10px 0px 10px;
-    line-height: 150px;
+    line-height: 125px;
 }
 
 .div {
@@ -94,10 +106,6 @@ card {
 }
 
 
-table{
-    text-align: center;
-}
-
 .dropdown {
     float: left;
     overflow: hidden;
@@ -113,16 +121,13 @@ table{
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
     background-color: inherit;
     font-family: inherit;
 }
-
-
-
 
 .dropdown-content {
     display: none;
@@ -174,4 +179,10 @@ a {
     text-align: left;
     line-height: 150%;
     padding-left: 30px;
+}
+
+.wrap{
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1500px;
 }
