@@ -7,11 +7,15 @@
     <link rel="stylesheet" type="text/css" href="mycss.css"/>
 </head>
 <body>
+<div id="container">
+    <div id="main">
 <div class="overskrift"><h1><a href="/">Danmark Mod Madspild</a></h1></div>
 
     <th:block th:include="home/includes/topnav :: topnav"></th:block>
 
     <h2 th:text="${alderbel}"></h2>
-
+    </div>
+</div>
+<th:block th:include="home/includes/footer :: footer"></th:block>
 </body>
 </html>

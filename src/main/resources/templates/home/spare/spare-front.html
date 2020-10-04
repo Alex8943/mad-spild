@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="mycss.css"/>
 </head>
 <body>
+<div id="container">
+    <div id="main">
 <div class="overskrift"><h1><a href="/">Danmark Mod Madspild</a></h1></div>
 
 <th:block th:include="home/includes/topnav :: topnav"></th:block>
@@ -55,5 +57,8 @@
 <input type="text" name="dage" placeholder="Periode i antal dage" />
 <input type="submit" value="Udregn" />
 </form>
+</div>
+</div>
+<th:block th:include="home/includes/footer :: footer"></th:block>
 </body>
 </html>

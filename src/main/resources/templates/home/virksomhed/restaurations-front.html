@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="mycss.css"/>
 </head>
 <body>
+<div id="container">
+    <div id="main">
 <div class="overskrift"><h1>Danmark Mod Madspild</h1></div>
 
 <th:block th:include="home/includes/topnav :: topnav"></th:block>
@@ -37,5 +39,8 @@
 <p style="font-size: 10px;"><i>kilde: Miljøstyrelsen, rapporten ”Kortlægning af madaffald i servicesektoren – Detailhandel, restauranter og storkøkkener” – tal fra 2014</i></p>
 <p>Mindre størrelse tallerken betyder mindre madspild. En række hoteller i Norge har reduceret deres tallerkenstørrelse - og dette har medført at madspild er blevet reduceret med 19,5%.</p>
 <p style="font-size: 10px;"><i>kilde: GreeNudge Norge - tal fra 2015</i></p>
+    </div>
+</div>
+<th:block th:include="home/includes/footer :: footer"></th:block>
 </body>
 </html>
