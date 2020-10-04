@@ -29,7 +29,7 @@ p{
 
 .box {
     background: #c4c4b0;
-    width: 500px;
+    width: 650px;
     border: 15px solid #dcdcc6;
     padding: 50px;
     text-align: left;
@@ -226,8 +226,9 @@ a {
 }
 #first {
     width: 300px;
-    float:left; /* add this */
+    float: left; /* add this */
 }
+
 #second {
     float: right; /* add this */
     padding-right: 10px;
