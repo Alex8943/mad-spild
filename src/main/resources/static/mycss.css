@@ -191,7 +191,7 @@ a {
 #footer{
     background-color: grey;
     position: relative;
-    height: 300px;
+    height: 220px;
     margin-top: -100px;
     clear: both;
     text-align: left;
@@ -209,12 +209,26 @@ a {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    /*height: 300px; /* Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.column-right{
+    float: right;
+    text-align: right;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden; /* add this to contain floated children */
+}
+#first {
+    width: 300px;
+    float:left; /* add this */
+}
+#second {
+    float: right; /* add this */
+    padding-right: 10px;
 }
