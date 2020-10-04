@@ -27,6 +27,24 @@ p{
     text-align: center;
 }
 
+.box {
+    background: #c4c4b0;
+    width: 500px;
+    border: 15px solid #dcdcc6;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.box2{
+    background: #c4c4b0;
+    width: 1000px;
+    border: 15px solid #dcdcc6;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+}
+
 * {
     margin: 0%;
     padding: 0%;
